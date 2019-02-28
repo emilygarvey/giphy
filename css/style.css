@@ -12,3 +12,9 @@ footer {
     padding-top: 100px;
     margin: 50px 0;
 }
+.link {
+    display:none;
+}
+#copyLink {
+    display:none;
+}
