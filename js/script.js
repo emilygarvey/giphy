@@ -6,8 +6,9 @@
 var api_request = "https://api.giphy.com/v1/gifs/search?q=puppy&rating=pg&api_key=dc6zaTOxFJmzC";
 
 $("#search-button").click(function(){
+    var input = $("input").val();
   $.ajax({
-      url: api_request,
+      url: "https://api.giphy.com/v1/gifs/search?q="+ input + "&rating=pg&api_key=dc6zaTOxFJmzC",
       method: "GET",
       success: function(response) {
           console.log("works");
